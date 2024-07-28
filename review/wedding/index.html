@@ -36,48 +36,37 @@
          </main>
       </section>
 
-      <nav
-         class="navbar navbar-expand-md bg-body-transparent sticky-top mynavbar"
-      >
-         <div class="container">
-            <a class="navbar-brand" href="#">Remando</a>
-            <button
-               class="navbar-toggler border-0"
-               type="button"
-               data-bs-toggle="offcanvas"
-               data-bs-target="#offcanvasNavbar"
-               aria-controls="offcanvasNavbar"
-               aria-label="Toggle navigation"
-            >
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="#"><b>R</b>Company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
             </button>
-            <div
-               class="offcanvas offcanvas-end"
-               tabindex="-1"
-               id="offcanvasNavbar"
-               aria-labelledby="offcanvasNavbarLabel"
-            >
-               <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                     Remando
-                  </h5>
-                  <button
-                     type="button"
-                     class="btn-close"
-                     data-bs-dismiss="offcanvas"
-                     aria-label="Close"
-                  ></button>
-               </div>
-               <div class="offcanvas-body">
-                  <div class="navbar-nav ms-auto">
-                     <a class="nav-link" href="#home">Home</a>
-                     <a class="nav-link" href="#info">Info</a>
-                     <a class="nav-link" href="#story">Story</a>
-                     <a class="nav-link" href="#gallery">gallery</a>
-                     <a class="nav-link" href="#rsvp">RSVP</a>
-                     <a class="nav-link" href="#gifts">Gifts</a>
-                  </div>
-               </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#info">Info</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#story">Story</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#rsvp">RSVP</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="#gifts">Gifts</a>
+                  </li>
+               </ul>
+               <form id="searchForm" class="d-flex " role="search">
+                  <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+               </form>
             </div>
          </div>
       </nav>
@@ -341,7 +330,7 @@
                </div>
 
                <div
-                  class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 justify-content-center"
+                  class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2 justify-content-center"
                >
                   <div class="col mt-3">
                      <a
@@ -735,6 +724,38 @@
          namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
 
          document.querySelector('#nama').value = nama    // mengisi pada elemen yang ber-id #nama
+      </script>
+      
+<!-- Search Form  -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+      <script>
+         document.getElementById('searchForm').addEventListener('submit', function(event) {
+         event.preventDefault(); // Prevent form from submitting normally
+         const query = document.getElementById('searchInput').value.trim().toLowerCase();
+         if (!query) return; // Do nothing if search query is empty
+   
+         // Remove previous highlights
+         document.querySelectorAll('.highlight').forEach(element => {
+            element.replaceWith(element.firstChild);
+         });
+   
+         const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, null, false);
+         const highlightNodes = [];
+         while (walker.nextNode()) {
+            highlightNodes.push(walker.currentNode);
+         }
+   
+         highlightNodes.forEach(node => {
+            const text = node.nodeValue;
+            const regex = new RegExp(query, 'gi');
+            if (regex.test(text)) {
+               const span = document.createElement('span');
+               span.innerHTML = text.replace(regex, match => `<span class="highlight">${match}</span>`);
+               node.parentNode.replaceChild(span, node);
+            }
+         });
+         });
       </script>
    </body>
 </html>

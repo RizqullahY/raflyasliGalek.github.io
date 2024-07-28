@@ -122,35 +122,36 @@ document.addEventListener("DOMContentLoaded", function () {
 		console.log(message)
 		window.open('http://wa.me/6283135852840?text=' + encodeURIComponent(message))
 
-		try {
-			const response = await fetch("php/placeOrder.php", {
-				method: "POST",
-				body: data,
-			});
+		//* Payment Gateway
+		// try {
+		// 	const response = await fetch("php/placeOrder.php", {
+		// 		method: "POST",
+		// 		body: data,
+		// 	});
 
-			const token = await response.text();
-			console.log(token);
-			snap.pay(token)
-		} catch (error) {
-			console.log(error);
-		}
+		// 	const token = await response.text();
+		// 	console.log(token);
+		// 	snap.pay(token)
+		// } catch (error) {
+		// 	console.log(error);
+		// }
 
 	});
 
 	const formatMessage = (obj) => {
 		return `Data Customer
-	Nama : ${obj.name}
-	Email : ${obj.email}
-	No Hp : ${obj.phone}
-	Data Pesanan
-	${JSON.parse(obj.items).map(
-				(item) => `
-			${item.name} (
-			${item.quantity}x 
-			${rupiah(item.total)}) \n
+			Nama : ${obj.name}
+			Email : ${obj.email}
+			No Hp : ${obj.phone}
+			Data Pesanan
+			${JSON.parse(obj.items).map(
+					(item) => `
+				${item.name} (
+				${item.quantity}x 
+				${rupiah(item.total)}) \n
+				`)}
 			TOTAL : ${rupiah(obj.total)}\n
-			Terima Kasih`
-			)}
-	`;
+			Terima Kasih
+		`;
 	};
 });
