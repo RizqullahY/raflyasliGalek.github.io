@@ -59,7 +59,7 @@ Teman - teman dipersilakan untuk menggunakan dan memodifikasi kode ini sesuai ke
    ```bash 
    npm install
    ```
-3. Bila ingin mengubah style - style tailwind... jalankan:
+3. Bila ingin mengubah style - style tailwind, pada direktori yang sama dengan index.html jalankan:
    ```bash 
    npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
    ```
