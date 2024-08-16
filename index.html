@@ -5,17 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="google-site-verification" content="JVhTIdfPvnb0fMBpK6rTutrovAZTyi_gmYM2hKiQMJE" />
 		<title>raflyasliGalek</title>
-		<link rel="stylesheet" href="src/output.css"/>
-		<link rel="icon" type="image/png" sizes="32x32" href="src/img/icon-remando.png"/>
-		<!-- Swipper -->
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="src/output.css" media="print" onload="this.media='all'"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="src/img/icon-remando.png" media="print" onload="this.media='all'"/>
 		<!-- CDN Font Awesome -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer" media="print" onload="this.media='all'"/>
 		<!-- AOS -->
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<!-- Sweet Alert -->
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<link rel="preconnect" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'"/>
+
+		<!-- Swipper -->
 		<style>
 			.swiper-container {
 				width: 100%;
@@ -29,6 +28,7 @@
 				height: auto;
 			}
 		</style>
+		<link rel="preconnect" href="https://unpkg.com/swiper/swiper-bundle.min.css" media="print" onload="this.media='all'"/>
 	</head>
 	<body>
 		<!--* Header -->
@@ -133,7 +133,7 @@
 			<div class="container">
 				<div class="flex flex-wrap">
 					<div class="w-full self-center px-4 mb-10 lg:w-1/2" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
-						<h1 class="text-base font-semibold text-primary md:text-xl lg-2xl">
+						<h1 class="text-base font-semibold text-primary md:text-xl lg-2xl"></h1>
 							Halo semuanya 👋, saya
 							<span
 								class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white"
@@ -216,7 +216,7 @@
 						>
 							Mari berteman
 						</h3>
-						<p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+						<p class="font-medium text-base text-secondary mb-6">
 							Ada pepatah mengatakan <i>"Tak kenal maka kenalan"</i>
 							kurang lebih seperti itu... Jadi alangkah baiknya kita berkenalan
 							terlebih dahulu... silahkan kunjungi sosial media saya dibawah ini
@@ -292,7 +292,7 @@
 				<div class="w-full px-4 flex flex-wrap justify-center xl:mx-auto xl:w-10/12" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 					<div class="mb-12 p-4 md:w-1/2">
 						<div class="rounded-md shadow-md overflow-hidden">
-							<img src="src/img/portfolio/2.png" alt="" width="w-full" />
+							<img loading="lazy" src="src/img/portfolio/2.png" alt="" width="w-full" />
 						</div>
 						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
 							Manajemen Reservasi - Admin | Reservasi Bengkel
@@ -307,7 +307,7 @@
 					</div>
 					<div class="mb-12 p-4 md:w-1/2">
 						<div class="rounded-md shadow-md overflow-hidden">
-							<img src="src/img/portfolio/3.png" alt="" width="w-full" />
+							<img loading="lazy" src="src/img/portfolio/3.png" alt="" width="w-full" />
 						</div>
 						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
 							Layanan Bengkel Central Otomotif
@@ -323,7 +323,7 @@
 					</div>
 					<div class="mb-12 p-4 md:w-1/2">
 						<div class="rounded-md shadow-md overflow-hidden">
-							<img src="src/img/portfolio/4.png" alt="" width="w-full" />
+							<img loading="lazy" src="src/img/portfolio/4.png" alt="" width="w-full" />
 						</div>
 						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
 							Transaksi Reservasi Bengkel
@@ -339,7 +339,7 @@
 					</div>
 					<div class="mb-12 p-4 md:w-1/2">
 						<div class="rounded-md shadow-md overflow-hidden">
-							<img src="src/img/portfolio/5.jpg" alt="" width="w-full" />
+							<img loading="lazy" src="src/img/portfolio/5.jpg" alt="" width="w-full" />
 						</div>
 						<h3 class="font-semibold text-xl text-dark dark:text-white mt-5 mb-3">
 							Layanan Bengkel Central Otomotif - Mobile
@@ -380,7 +380,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="swiper-container" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<!--* Odoo -->
 						<div class="swiper-slide">
@@ -389,7 +389,7 @@
 								target="_blank"
 								class="max-w-full mx-4 py-4 opacity-90 hover:opacity-100 scale-150 duration-500 lg:mx-8 xl:mx-10 transition"
 							>
-								<img src="src/img/tech/odoo.png" alt="" />
+								<img loading="lazy" src="src/img/tech/odoo.png" alt="" />
 							</a>
 						</div>
 
@@ -400,21 +400,21 @@
 								target="_blank"
 								class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-8 xl:mx-10"
 							>
-								<img src="src/img/tech/python.png" alt="" />
+								<img loading="lazy" src="src/img/tech/python.png" alt="" />
 							</a>
 							<a
 								href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
 								target="_blank"
 								class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-8 xl:mx-10"
 							>
-								<img src="src/img/tech/javascript.png" alt="" />
+								<img loading="lazy" src="src/img/tech/javascript.png" alt="" />
 							</a>
 							<a
 								href="https://laravel.com"
 								target="_blank"
 								class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-8 xl:mx-10"
 							>
-								<img src="src/img/tech/laravel.png" alt="" />
+								<img loading="lazy" src="src/img/tech/laravel.png" alt="" />
 							</a>
 						</div>
 
@@ -426,35 +426,35 @@
 									target="_blank"
 									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/html.png" alt="" />
+									<img loading="lazy" src="src/img/tech/html.png" alt="" />
 								</a>
 								<a
 									href="https://developer.mozilla.org/en-US/docs/Web/CSS"
 									target="_blank"
 									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/css.png" alt="" />
+									<img loading="lazy" src="src/img/tech/css.png" alt="" />
 								</a>
 								<a
 									href="https://getbootstrap.com"
 									target="_blank"
 									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/bootstrap.png" alt="" />
+									<img loading="lazy" src="src/img/tech/bootstrap.png" alt="" />
 								</a>
 								<a
 									href="https://tailwindcss.com"
 									target="_blank"
 									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/tailwind.png" alt="" />
+									<img loading="lazy" src="src/img/tech/tailwind.png" alt="" />
 								</a>
 								<a
 									href="https://reactjs.org"
 									target="_blank"
 									class="max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/react.png" alt="" />
+									<img loading="lazy" src="src/img/tech/react.png" alt="" />
 								</a>
 							</div>
 						</div>
@@ -467,28 +467,28 @@
 									target="_blank"
 									class="max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/dotnet.png" alt="" />
+									<img loading="lazy" src="src/img/tech/dotnet.png" alt="" />
 								</a>
 								<a
 									href="https://nodejs.org"
 									target="_blank"
 									class="max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/node.png" alt="" />
+									<img loading="lazy" src="src/img/tech/node.png" alt="" />
 								</a>
 								<a
 									href="https://www.php.net"
 									target="_blank"
 									class="max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/php.png" alt="" />
+									<img loading="lazy" src="src/img/tech/php.png" alt="" />
 								</a>
 								<a
 									href="https://dev.mysql.com"
 									target="_blank"
 									class="scale-150 max-w-[60px] sm:max-w-[90px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/mysql.png" alt="" />
+									<img loading="lazy" src="src/img/tech/mysql.png" alt="" />
 								</a>
 							</div>
 						</div>
@@ -501,35 +501,35 @@
 									target="_blank"
 									class="scale-110 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/vs-code.png" alt="" />
+									<img loading="lazy" src="src/img/tech/vs-code.png" alt="" />
 								</a>
 								<a
 									href="https://www.postgresql.org"
 									target="_blank"
 									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/postgresql.png" alt="" />
+									<img loading="lazy" src="src/img/tech/postgresql.png" alt="" />
 								</a>
 								<a
 									href="https://git-scm.com"
 									target="_blank"
 									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/git.png" alt="" />
+									<img loading="lazy" src="src/img/tech/git.png" alt="" />
 								</a>
 								<a
 									href="https://docs.github.com"
 									target="_blank"
 									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/github.png" alt="" />
+									<img loading="lazy" src="src/img/tech/github.png" alt="" />
 								</a>
 								<a
 									href="https://firebase.google.com/docs"
 									target="_blank"
 									class="scale-75 max-w-[80px] sm:max-w-[100px] md:max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl:mx-8"
 								>
-									<img src="src/img/tech/firebase.png" alt="" />
+									<img loading="lazy" src="src/img/tech/firebase.png" alt="" />
 								</a>
 							</div>
 						</div>
@@ -561,7 +561,7 @@
 				<div class="flex flex-wrap" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
 					<div class="w-full px-4 md:w-1/2 lg:w-1/3">
 						<div class="rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-							<img src="src/img/blog/ppt-bengkel-otomotif.png" alt="" class="w-full" />
+							<img loading="lazy" src="src/img/blog/ppt-bengkel-otomotif.png" alt="" class="w-full" />
 							<div class="py-8 px-6">
 								<h3>
 									<a
@@ -587,7 +587,7 @@
 					</div>
 					<div class="w-full px-4 md:w-1/2 lg:w-1/3">
 						<div class="rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-							<img src="src/img/blog/festival-penulis.png" alt="" class="w-full" />
+							<img loading="lazy" src="src/img/blog/festival-penulis.png" alt="" class="w-full" />
 							<div class="py-8 px-6">
 								<h3>
 									<a
@@ -613,7 +613,7 @@
 					</div>
 					<div class="w-full px-4 md:w-1/2 lg:w-1/3">
 						<div class="rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-							<img src="src/img/blog/remando-logo-hitam.jpg" alt="" class="w-full" />
+							<img loading="lazy" src="src/img/blog/remando-logo-hitam.jpg" alt="" class="w-full" />
 							<div class="py-8 px-6">
 								<h3>
 									<a
@@ -891,24 +891,21 @@
 		</a>
 		<!-- Back to Top End -->
 
-		<script src="src/js/script.js"></script>
+		<script src="src/js/script.js" defer></script>
+		<!-- Sweet Alert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+		<!-- Swipper -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<!-- AlpineJS -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.1/dist/cdn.min.js"
-			defer
-		></script>
+		<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.1/dist/cdn.min.js" defer></script>
 		<!-- Swipper Pagination -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script>
+		<script defer>
 			const swiper = new Swiper(".swiper-container", {
 				loop: true,
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
-				},
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
 				},
 				autoplay: {
                delay: 3000, 
@@ -918,7 +915,7 @@
 			});
 		</script>
 		<!-- Ajax SweetAlert Kirim data contact -->
-		<script>
+		<script defer>
 			$(document).ready(function () {
 				var isSending = false; 
 				$("#contactForm").submit(function (event) {
@@ -957,7 +954,7 @@
 						},
 					});
 				});
-			});
+			}); 
 		</script>
 		<!-- AOS Init -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
