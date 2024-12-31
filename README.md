@@ -1,20 +1,19 @@
-# Website Portofolio Tailwind CSS
-Website portofolio yang dibangun menggunakan HTML, CSS, JavaScript, dan Tailwind CSS. Proyek ini dikembangkan berdasarkan tutorial yang disampaikan oleh Pak Sandika di [Channel YouTube-nya](https://www.youtube.com/@sandhikagalihWPU). Tutorial lengkapnya dapat teman - teman lihat pada [tautan ini](https://www.youtube.com/watch?v=8Ea4oq8qFtM&t=816s&pp=ygUSd3B1IHRhaWx3aW5kIHBvcnRv).
+# Portfolio Website using Tailwind CSS
+This portfolio website is built using HTML, CSS, JavaScript, and Tailwind CSS. This project was developed based on the tutorial shared by Pak Sandika on his [YouTube Channel](https://www.youtube.com/@sandhikagalihWPU). You can watch the full tutorial through [this link](https://www.youtube.com/watch?v=8Ea4oq8qFtM&t=816s&pp=ygUSd3B1IHRhaWx3aW5kIHBvcnRv).
 
-## Daftar Isi
-- [Pendahuluan](#pendahuluan)
-- [Teknologi yang Digunakan](#teknologi-yang-digunakan)
-- [Penjelasan Singkat](#penjelasan-singkat)
-- [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-
-
-## Pendahuluan
-Website ini dirancang sebagai portofolio pribadi untuk menampilkan proyek-proyek, keterampilan, dan pengalaman yang telah saya miliki dalam bidang programming. Website ini adalah aplikasi satu halaman (Single Page Application) atau biasa disebut Landing Page yang terdiri dari beberapa bagian, seperti Tentang Saya, Portofolio, Blog, Tech dan Kontak.
+## Table of Contents
+- [Introduction](#introduction)
+- [Technologies Used](#technologies-used)
+- [Brief Explanation](#brief-explanation)
+- [Installation](#installation)
 
 
-## Teknologi yang Digunakan
-Proyek ini dibangun menggunakan teknologi-teknologi berikut:
+## Introduction
+This website is designed as a personal portfolio to showcase projects, skills, and experience in the field of programming. It is a single-page application (SPA) or commonly called a Landing Page, consisting of several sections such as About Me, Portfolio, Blog, Tech, and Contact.
+
+
+## Technologies Used
+This project is built using the following technologies:
 
 - **HTML5**
 - **CSS3** 
@@ -23,36 +22,33 @@ Proyek ini dibangun menggunakan teknologi-teknologi berikut:
 - **Git**
 - **GitHub**
 
-## Penjelasan Singkat
-Di dalam proyek ini, terdapat beberapa file dan folder. Berikut adalah penjelasan singkat mengenai isi dari direktori proyek:
+## Brief Explanation
+This project contains several files and folders. Below is a brief explanation of the contents of the project directory:
 
-- **`index.html`**:
-  Ini adalah file utama dari website portofolio yang berisi struktur HTML. File ini memuat semua konten utama..
+- **`index.html`**:  
+  This is the main file of the portfolio website, containing the HTML structure. It includes all the main content of the website.
 
-- **`robots.txt`**:
-  File ini digunakan untuk mengatur akses crawler mesin pencari ke halaman-halaman tertentu di website Teman - teman. Dengan konfigurasi di `robots.txt`, Teman - teman bisa menentukan halaman mana yang diizinkan atau tidak diizinkan untuk diindeks oleh mesin pencari seperti Google.
+- **`robots.txt`**:  
+  This file is used to manage search engine crawlers' access to certain pages of the website. With the `robots.txt` configuration, you can specify which pages are allowed or disallowed to be indexed by search engines like Google.
 
-- **`tailwind.config.js`**:
-  File konfigurasi ini digunakan untuk mengatur Tailwind CSS. Teman - teman bisa menyesuaikan tema, warna, tipografi, dan breakpoints di sini agar sesuai dengan kebutuhan desain proyek Teman - teman.
+- **`tailwind.config.js`**:  
+  This configuration file is used to customize Tailwind CSS. You can adjust themes, colors, typography, and breakpoints here to suit the design needs of your project.
 
-- **`src/`**:
-  Direktori ini berisi aset-aset yang digunakan oleh website, seperti gambar, ikon, dan file CSS serta JavaScript.
+- **`src/`**:  
+  This directory contains the assets used by the website, such as images, icons, and CSS and JavaScript files.
 
-## Instalasi
-Teman - teman dipersilakan untuk menggunakan dan memodifikasi kode ini sesuai kebutuhan Teman - teman. Saya berharap proyek ini bisa membantu Teman - teman dalam belajar dan mengembangkan website portofolio pribadi Teman - teman. Berikut langkah - langkahnya
+## Installation
+Feel free to use and modify this code according to your needs. I hope this project can assist you in learning and developing your own personal portfolio website. Here are the steps:
 
-1. Download zip dan extract atau jika punya git bisa clone repository:
+1. Download the zip file and extract it, or if you have git, you can clone the repository:
    ```bash 
    git clone https://github.com/RizqullahY/raflyasligalek.git 
    ```
-2. Menginstall dependensi:
+2. Install the dependencies:
    ```bash 
    npm install
    ```
-3. Bila ingin mengubah style - style tailwind, pada direktori yang sama dengan index.html jalankan:
+3. If you want to modify the Tailwind styles, run the following command in the same directory as the `index.html` file:
    ```bash 
    npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
    ```
-
-
-
